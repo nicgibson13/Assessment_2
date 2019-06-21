@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		7C9D3E4122BD2A5A00B038AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E4022BD2A5A00B038AE /* AppDelegate.swift */; };
-		7C9D3E4322BD2A5A00B038AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E4222BD2A5A00B038AE /* ViewController.swift */; };
 		7C9D3E4622BD2A5A00B038AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D3E4422BD2A5A00B038AE /* Main.storyboard */; };
 		7C9D3E4922BD2A5A00B038AE /* Assessment_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E4722BD2A5A00B038AE /* Assessment_2.xcdatamodeld */; };
 		7C9D3E4B22BD2A5B00B038AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D3E4A22BD2A5B00B038AE /* Assets.xcassets */; };
 		7C9D3E4E22BD2A5B00B038AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D3E4C22BD2A5B00B038AE /* LaunchScreen.storyboard */; };
+		7C9D3E5722BD2B2B00B038AE /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E5622BD2B2B00B038AE /* ItemController.swift */; };
+		7C9D3E5A22BD2B6200B038AE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E5922BD2B6200B038AE /* CoreDataStack.swift */; };
+		7C9D3E5C22BD2C3E00B038AE /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E5B22BD2C3E00B038AE /* Item+Convenience.swift */; };
+		7C9D3E5F22BD322900B038AE /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E5E22BD322900B038AE /* ItemListTableViewController.swift */; };
+		7C9D3E6322BD36A800B038AE /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3E6222BD36A800B038AE /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C9D3E3D22BD2A5A00B038AE /* Assessment_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D3E4022BD2A5A00B038AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C9D3E4222BD2A5A00B038AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C9D3E4522BD2A5A00B038AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C9D3E4822BD2A5A00B038AE /* Assessment_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assessment_2.xcdatamodel; sourceTree = "<group>"; };
 		7C9D3E4A22BD2A5B00B038AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C9D3E4D22BD2A5B00B038AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C9D3E4F22BD2A5B00B038AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C9D3E5622BD2B2B00B038AE /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		7C9D3E5922BD2B6200B038AE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7C9D3E5B22BD2C3E00B038AE /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
+		7C9D3E5E22BD322900B038AE /* ItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
+		7C9D3E6222BD36A800B038AE /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +48,8 @@
 		7C9D3E3422BD2A5A00B038AE = {
 			isa = PBXGroup;
 			children = (
-				7C9D3E3F22BD2A5A00B038AE /* Assessment_2 */,
 				7C9D3E3E22BD2A5A00B038AE /* Products */,
+				7C9D3E3F22BD2A5A00B038AE /* Assessment_2 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +64,67 @@
 		7C9D3E3F22BD2A5A00B038AE /* Assessment_2 */ = {
 			isa = PBXGroup;
 			children = (
+				7C9D3E6422BD36B600B038AE /* Views */,
+				7C9D3E5522BD2B1100B038AE /* Resources */,
+				7C9D3E5D22BD2C9500B038AE /* Model */,
+				7C9D3E6122BD32CC00B038AE /* Controllers */,
+			);
+			path = Assessment_2;
+			sourceTree = "<group>";
+		};
+		7C9D3E5522BD2B1100B038AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				7C9D3E4022BD2A5A00B038AE /* AppDelegate.swift */,
-				7C9D3E4222BD2A5A00B038AE /* ViewController.swift */,
-				7C9D3E4422BD2A5A00B038AE /* Main.storyboard */,
 				7C9D3E4A22BD2A5B00B038AE /* Assets.xcassets */,
 				7C9D3E4C22BD2A5B00B038AE /* LaunchScreen.storyboard */,
 				7C9D3E4F22BD2A5B00B038AE /* Info.plist */,
-				7C9D3E4722BD2A5A00B038AE /* Assessment_2.xcdatamodeld */,
 			);
-			path = Assessment_2;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C9D3E5822BD2B3700B038AE /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D3E5622BD2B2B00B038AE /* ItemController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		7C9D3E5D22BD2C9500B038AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D3E4722BD2A5A00B038AE /* Assessment_2.xcdatamodeld */,
+				7C9D3E5922BD2B6200B038AE /* CoreDataStack.swift */,
+				7C9D3E5B22BD2C3E00B038AE /* Item+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C9D3E6022BD32C000B038AE /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D3E5E22BD322900B038AE /* ItemListTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		7C9D3E6122BD32CC00B038AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D3E5822BD2B3700B038AE /* Model Controller */,
+				7C9D3E6022BD32C000B038AE /* View Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C9D3E6422BD36B600B038AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D3E6222BD36A800B038AE /* ButtonTableViewCell.swift */,
+				7C9D3E4422BD2A5A00B038AE /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9D3E5A22BD2B6200B038AE /* CoreDataStack.swift in Sources */,
+				7C9D3E5F22BD322900B038AE /* ItemListTableViewController.swift in Sources */,
+				7C9D3E5C22BD2C3E00B038AE /* Item+Convenience.swift in Sources */,
 				7C9D3E4922BD2A5A00B038AE /* Assessment_2.xcdatamodeld in Sources */,
-				7C9D3E4322BD2A5A00B038AE /* ViewController.swift in Sources */,
 				7C9D3E4122BD2A5A00B038AE /* AppDelegate.swift in Sources */,
+				7C9D3E6322BD36A800B038AE /* ButtonTableViewCell.swift in Sources */,
+				7C9D3E5722BD2B2B00B038AE /* ItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = Assessment_2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment_2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HLC2FMZN4;
-				INFOPLIST_FILE = Assessment_2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment_2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
